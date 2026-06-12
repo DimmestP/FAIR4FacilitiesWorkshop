@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hands-On Workshop — Saturday 18 July 2026</title>
-<meta name="description" content="A one-day practical workshop: time, location, directions and full itinerary.">
+<title>FAIR 4 Facilities Workshop — Thu 9th - Fri 10th July 2026</title>
+<meta name="description" content="A two-day FAIR practices workshop: time, location, directions and full itinerary.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -123,6 +123,17 @@
 
   /* ---------- Itinerary: the run sheet ---------- */
   .runsheet { border-top: 3px solid var(--ink); margin-top: 8px; }
+ 
+  .day-label {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 26px 0 12px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .day-label .mono { color: var(--blue); }
+  .day-label h3 { font-size: 1.2rem; font-weight: 700; }
+  .runsheet > .day-label:first-child { padding-top: 18px; }
 
   .slot {
     display: grid;
@@ -179,20 +190,20 @@
 
 <header>
   <div class="wrap">
-    <p class="kicker mono"><span>One-day workshop</span><span>Free · 24 places</span></p>
-    <h1>Practical Mapping with Open Data</h1>
+    <p class="kicker mono"><span>Two-day workshop</span><span>Free · 30 places</span></p>
+    <h1>FAIR 4 Facilities</h1>
     <div class="hero-facts">
       <div class="fact">
         <span class="mono">Date</span>
-        <strong>Saturday 18 July 2026</strong>
+        <strong>Thu 9th - Fri 10th July 2026</strong>
       </div>
       <div class="fact">
         <span class="mono">Time</span>
-        <strong>9:30 — 16:30</strong>
+        <strong>Day 1: 12pm — 5pm    Day 2: 11am - 4pm </strong>
       </div>
       <div class="fact">
         <span class="mono">Venue</span>
-        <strong>The Maltings, Norwich</strong>
+        <strong>Quadram Institute, Norwich</strong>
       </div>
     </div>
   </div>
@@ -201,8 +212,8 @@
 <section id="about">
   <div class="wrap">
     <h2><span class="mono">About</span>What we'll do</h2>
-    <p class="lede">A hands-on day for beginners and improvers. By the end of the workshop you'll have built and published your own interactive map using freely available data — no prior experience required, just a laptop and curiosity.</p>
-    <p class="lede">Lunch, tea and coffee are provided. Bring your own laptop; chargers and Wi-Fi are available on site.</p>
+    <p class="lede">A two-day workshop discussing FAIR practices and impacts at facilities in UK life science institutes</p>
+    <p class="lede">Lunch, tea and coffee are provided.</p>
   </div>
 </section>
 
@@ -211,18 +222,18 @@
     <h2><span class="mono">Where</span>Location &amp; directions</h2>
     <div class="place-grid">
       <address>
-        <strong>The Maltings, Room 2</strong>
-        12 King Street<br>
-        Norwich NR1 1PD<br>
-        <a class="map-link" href="https://maps.google.com/?q=12+King+Street+Norwich+NR1+1PD">Open in Google Maps ↗</a>
+        <strong>Quadram Institute</strong>
+        Rosalind Franklin Rd<br>
+        Norwich NR4 7UQ<br>
+        <a class="map-link" href="https://maps.app.goo.gl/iojznm1Fqj83UR9QA">Open in Google Maps ↗</a>
       </address>
       <div class="directions">
-        <h3>By train</h3>
-        <p>Norwich station is a 10-minute walk: exit towards the river, follow Riverside Road, then turn onto King Street. The entrance is next to the blue door marked “Maltings”.</p>
+        <h3>By Taxi</h3>
+        <p>The local taxi service is <a href="http://veezu.co.uk/norwich-ppccampaign">Veezu</a>.</p>
         <h3>By car</h3>
-        <p>Use the Rose Lane car park (NR1 1BY), 5 minutes on foot. On-street parking on King Street is limited to 2 hours.</p>
+        <p>The Quadram Institute has its own guest carpark (access via Rosalind Franklin Rd). Get in contact with Sam to confirm a space.</p>
         <h3>By bus</h3>
-        <p>Routes 25 and 26 stop at Prince of Wales Road, a 6-minute walk away.</p>
+        <p>Route 26 goes from the Norwich Train station to the Norfolk and Norwich Hospital. Quadram is about a 5 minute walk from the hospital. PLEASE NOTE the 26A does not go to the hospital!</p>
       </div>
     </div>
   </div>
@@ -232,58 +243,90 @@
   <div class="wrap">
     <h2><span class="mono">Schedule</span>Itinerary</h2>
     <div class="runsheet">
-      <div class="slot">
-        <time>09:30</time>
-        <div><h3>Arrival &amp; coffee</h3><p>Sign in, get set up on the Wi-Fi, meet the other participants.</p></div>
+      <div class="day-label">
+        <span class="mono">Day 1</span>
+        <h3>Thursday 9 July</h3>
       </div>
       <div class="slot">
-        <time>10:00</time>
-        <div><h3>Session 1 — Finding open data</h3><p>Where good public datasets live and how to judge what's usable.</p></div>
+        <time>12:00</time>
+        <div><h3>Arrival &amp; Lunch</h3><p>Sign in, enjoyu lunch, meet the other participants.</p></div>
+      </div>
+      <div class="slot">
+        <time>13:00</time>
+        <div><h3>Welcome</h3></div>
+      </div>
+      <div class="slot">
+        <time>13:15</time>
+        <div><h3>Keynote</h3><p>Dr Philipp C. Münch - FAIR sequencing-data management with SeqDesk</p></div>
+      </div>
+      <div class="slot">
+        <time>14:00</time>
+        <div><h3>Round table</h3><p>Current UK Life Science Data Landscape</p></div>
       </div>
       <div class="slot break">
-        <time>11:15</time>
+        <time>15:00</time>
         <div><h3>Break</h3></div>
       </div>
       <div class="slot">
-        <time>11:30</time>
-        <div><h3>Session 2 — Building your first map</h3><p>Guided, step-by-step: from a spreadsheet to an interactive map in the browser.</p></div>
+        <time>15:30</time>
+        <div><h3>Talk</h3><p>Dr Nishadi De Silva - Introduction to BioFAIR.</p></div>
+      </div>
+      <div class="slot">
+        <time>15:45</time>
+        <div><h3>Round table</h3><p>Obstacles in producing FAIR data</p></div>
+      </div>
+      <div class="slot">
+        <time>16:45</time>
+        <div><h3>Day 1 Closing Remarks</h3></div>
       </div>
       <div class="slot break">
-        <time>12:45</time>
-        <div><h3>Lunch (provided)</h3></div>
+        <time>18:30</time>
+        <div><h3>Dinner</h3></div>
+      </div>
+      <div class="day-label">
+        <span class="mono">Day 1</span>
+        <h3>Friday 10 July</h3>
+      </div>
+      <div class="slot">
+        <time>11:00</time>
+        <div><h3>Talk</h3><p>IBM Sponsored Talk - FAIR Research Data Management with IBM</p></div>
+      </div>
+      <div class="slot">
+        <time>11:30</time>
+        <div><h3>Round table</h3><p>Measuring FAIR Impact.</p></div>
+      </div>
+      <div class="slot break">
+        <time>12:30</time>
+        <div><h3>Lunch</h3></div>
       </div>
       <div class="slot">
         <time>13:30</time>
-        <div><h3>Session 3 — Styling &amp; storytelling</h3><p>Colour, labels and layers: making a map people actually want to read.</p></div>
+        <div><h3>Flash Talks</h3></div>
+      </div>
+      <div class="slot">
+        <time>13:45</time>
+        <div><h3>Talk</h3><p>Dr Karim Gharbi and Dr Felix Shaw - Gold in gold out: connecting data brokers with core facilities to improve FAIR compliance</p></div>
+      </div>
+      <div class="slot">
+        <time>14:00</time>
+        <div><h3>Round Table</h3><p>Creating a FAIR road map</p></div>
       </div>
       <div class="slot">
         <time>15:00</time>
-        <div><h3>Session 4 — Publish your map</h3><p>Put your work online for free and share a link with anyone.</p></div>
+        <div><h3>Workshop Closing Remarks</h3></div>
       </div>
-      <div class="slot">
-        <time>16:00</time>
-        <div><h3>Show &amp; tell, wrap-up</h3><p>Quick demos from the room, where to go next, and goodbyes.</p></div>
+      <div class="slot break">
+        <time>15:15</time>
+        <div><h3> Coffee and network</h3></div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="bring">
-  <div class="wrap">
-    <h2><span class="mono">Prep</span>What to bring</h2>
-    <ul class="bring">
-      <li>A laptop (any operating system) and its charger</li>
-      <li>A modern web browser — Chrome, Firefox or Edge</li>
-      <li>A free GitHub account, set up before you arrive</li>
-      <li>Optional: a dataset you'd like to map</li>
-    </ul>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <span class="mono">Questions?</span>
-    <p>Email <a href="mailto:hello@example.com">hello@example.com</a> or message the organisers. Places are limited — please let us know if you can no longer attend.</p>
+    <p>Email <a href="mailto:sam.haynes@biofair.uk">sam.haynes@biofair.uk</a> or message the organisers. Places are limited — please let us know if you can no longer attend.</p>
   </div>
 </footer>
 
