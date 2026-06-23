@@ -163,6 +163,34 @@
   ul.bring li { padding: 8px 0 8px 26px; position: relative; border-bottom: 1px dashed var(--rule); }
   ul.bring li::before { content: "→"; position: absolute; left: 0; color: var(--blue); }
 
+  /* ---------- Sponsors ---------- */
+  .sponsor-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 8px;
+  }
+ 
+  .sponsor {
+    border: 1px solid var(--rule);
+    background: #FFFFFF;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+ 
+  .sponsor img {
+    max-width: 100%;
+    max-height: 72px;
+    display: block;
+  }
+ 
+  @media (max-width: 640px) {
+    .sponsor-row { grid-template-columns: 1fr; }
+  }
+
   footer {
     background: var(--ink);
     color: var(--paper);
@@ -208,6 +236,24 @@
     </div>
   </div>
 </header>
+
+<section id="sponsors">
+  <div class="wrap">
+    <h2><span class="mono">Thanks</span>Our sponsors</h2>
+    <p class="lede">This workshop is free thanks to the generous support of:</p>
+    <div class="sponsor-row">
+      <a class="sponsor" href="https://biofair.uk/" aria-label="BioFAIR">
+        <img src="logos/BioFAIR.png" alt="BioFAIR logo">
+      </a>
+      <a class="sponsor" href="https://quadram.ac.uk/" aria-label="Quadram">
+        <img src="logos/Quadram.png" alt="Quadram Institute BioSciences">
+      </a>
+      <a class="sponsor" href="https://www.ibm.com/uk-en" aria-label="IBM">
+        <img src="logos/IBM.png" alt="IBM logo">
+      </a>
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap">
